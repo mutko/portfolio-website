@@ -1,0 +1,31 @@
+.projects {
+  p {
+    a {
+      color: $altColor;
+    }
+  }
+}
+.few-projects {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.project-preview {
+  width: 100%;
+  position: relative;
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  .phone {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .screenshot {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+}

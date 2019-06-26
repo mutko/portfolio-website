@@ -1,0 +1,15 @@
+.hero {
+  text-align: center;
+}
+.title {
+  font-weight: bold;
+  margin: 0 0 4rem 0;
+  span {
+    color: $altColor;
+    font-weight: 300;
+  }
+}
+.intro-text {
+  margin-bottom: 4rem;
+  line-height: 2;
+}

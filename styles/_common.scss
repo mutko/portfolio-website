@@ -1,0 +1,67 @@
+body {
+  font-family: 'Questrial', sans-serif;
+  color: $textColor;
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: $mainColor;
+  font-weight: 300;
+}
+h2 {
+  font-size: 2.3rem;
+}
+h3 {
+  font-size: 1.8rem;
+}
+.container {
+  padding: 0 15px;
+  @media (min-width: $s) {
+    padding: 0;
+    width: 540px;
+    margin: 0 auto;
+  }
+  @media (min-width: $m) {
+    width: 750px;
+  }
+  @media (min-width: $l) {
+    width: 970px;
+  }
+  @media (min-width: $xl) {
+    width: 1170px;
+  }
+  @media (min-width: $xxl) {
+    width: 1600px;
+  }
+}
+.btn {
+  display: inline-block;
+  border: 1px solid $altColor;
+  font-family: 'Montserrat', sans-serif;
+  color: $altColor;
+  font-weight: 300;
+  text-align: center;
+  padding: 1rem 4rem;
+  transition: background .5s;
+  &:hover {
+    color: #fff;
+    background: $altColor;
+    // background: linear-gradient(to right, $altColor 0%, #c14e7c 100%);
+  }
+}
+
+
+
+.text-left {
+  text-align: left;
+}
+.section {
+  padding: 3rem 0;
+  h2 {
+    padding-bottom: 1rem;
+  }
+  p {
+    padding-bottom: 2rem;
+  }
+}

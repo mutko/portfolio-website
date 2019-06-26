@@ -1,0 +1,121 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .6);
+  z-index: 10;
+  display: none;
+}
+.links {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50vw;
+  height: 100vh;
+  padding: 1rem 0;
+  background: #fff;
+  z-index: 20;
+  overflow-y: auto;
+  transform: translateX(-100%);
+  transition: transform .5s;
+  a {
+    color: $textColor; 
+    &.active,
+    &.email-link {
+      color: $altColor;
+    }
+  }
+  @media (min-width: $l) {
+    transform: translateX(0);
+    transform: translateY(-100%);
+  }
+}
+.page-menu {
+  @include flexCenter();
+  line-height: 1;
+  padding: 2rem 0;
+  .logo {
+    font-size: 3rem;
+  }
+}
+.nav-list {
+  line-height: 1;
+  li {
+    text-transform: uppercase;
+    a {
+      display: block;
+      padding: 1rem 2rem;
+      &:hover {
+        color: $altColor;
+      }
+    }
+  }
+}
+.hire {
+  padding: 2rem;
+  p {
+    padding: .5rem 0 1rem;
+  }
+}
+.is-open {
+  display: block;
+  transform: translateX(0);
+  @media (min-width: $l) {
+    transform: translateY(0);
+  }
+}
+
+.toggle {
+  margin-left: auto;
+  min-width: 44px;
+  height: 44px;
+  text-align: center;
+  display: block;
+  position: relative;
+  z-index: 30;
+  transform: all ease .3s;
+  cursor: pointer;
+}
+.hamb-menu {
+  display: block;
+  width: 23px;
+  height: 2px;
+  position: absolute;
+  background: $altColor;;
+  white-space: nowrap;
+  transition: all ease .3s;
+  top: 22px;
+  right: 0;
+  transform: translate(-50%,-50%);
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 23px;
+    height: 2px;
+    transition: all ease .3s;
+    outline: 1px solid transparent;
+    left: 0;
+    background: $altColor;
+  }
+  &::before {
+    top: -8px;
+  }
+  &::after {
+    top: 8px;
+  }
+}
+.toggle.open {
+  .hamb-menu {
+    background-color: transparent!important;
+    &::before {
+      transform: translateY(8px) rotateZ(-45deg);
+    }
+    &::after {
+      transform: translateY(-8px) rotateZ(45deg);
+    }
+  }
+}

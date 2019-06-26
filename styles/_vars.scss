@@ -1,0 +1,18 @@
+// colors
+$mainColor: #242321;
+$altColor: #e96443;
+$textColor: #666;
+
+// media queries
+$s: 576px;
+$m: 768px;
+$l: 992px;
+$xl: 1200px;
+$xxl: 1920px;
+
+
+// mixins
+@mixin flexCenter() {
+  display: flex;
+  align-items: center;
+}
