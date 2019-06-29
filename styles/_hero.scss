@@ -1,12 +1,13 @@
 .hero__text {
-  margin-left: 10%;
-  text-align: center;
-  @media (min-width: $l) {
-    text-align: left;
+  @media (min-width: $m) {
+    margin-left: 10%;
   }
 }
 .hero__title {
-  display: inline-block;
+  text-align: center;
+  @media (min-width: $m) {
+    text-align: left;
+  }
   h1 {
     font-weight: bold;
     @media (min-width: $xl) {
@@ -16,9 +17,6 @@
   h2 {
     color: $altColor;
     font-weight: 300;
-    @media (min-width: $s) {
-      text-align: left;
-    }
     @media (min-width: $xl) {
       font-size: 4rem;
     }
