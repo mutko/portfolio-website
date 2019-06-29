@@ -15,7 +15,10 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 50vw;
+  width: 70vw;
+  @media (min-width: $m) {
+    width: 50vw;
+  }
   height: 100vh;
   padding: 1rem 0;
   background: #fff;
@@ -39,8 +42,7 @@
       }
     }
     background: $navBg;
-    padding-top: 40px;
-    padding-bottom: 60px;
+    padding: 3rem 0 5rem;
     overflow: hidden;
     position: fixed;
     left: 0;
@@ -58,14 +60,20 @@
     .hire {
       margin-left: auto;
     }
+    @media (min-width: $xl) {
+      padding: 5rem 0 7rem;
+    }
   }
 }
 .page-menu {
   @include flexCenter();
   line-height: 1;
-  padding: 2rem 0;
+  padding: 2rem 0 4rem;
+  @media (min-width: $l) {
+    padding: 4rem 0;
+  }
   .logo {
-    font-size: 3rem;
+    font-size: 3rem 0 6rem;
   }
 }
 .nav-list {

@@ -12,6 +12,9 @@ h3 {
   color: $mainColor;
   font-weight: 300;
 }
+h1 {
+  font-size: 3rem;
+}
 h2 {
   font-size: 2.3rem;
 }
@@ -29,10 +32,10 @@ h3 {
     width: 720px;
   }
   @media (min-width: $l) {
-    width: 960px;
+    width: 940px;
   }
   @media (min-width: $xl) {
-    width: 1140px;
+    width: 1160px;
   }
 }
 .btn {

@@ -1,17 +1,85 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:300|Questrial&display=swap");
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,600|Questrial&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -21,22 +89,35 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
   content: none;
 }
 
@@ -58,11 +139,6 @@ body {
 
 main {
   display: block;
-}
-
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
 }
 
 hr {
@@ -3572,6 +3648,10 @@ h3 {
   font-weight: 300;
 }
 
+h1 {
+  font-size: 3rem;
+}
+
 h2 {
   font-size: 2.3rem;
 }
@@ -3600,13 +3680,13 @@ h3 {
 
 @media (min-width: 992px) {
   .container {
-    width: 960px;
+    width: 940px;
   }
 }
 
 @media (min-width: 1200px) {
   .container {
-    width: 1140px;
+    width: 1160px;
   }
 }
 
@@ -3658,7 +3738,7 @@ h3 {
   position: fixed;
   top: 0;
   left: 0;
-  width: 50vw;
+  width: 70vw;
   height: 100vh;
   padding: 1rem 0;
   background: #fff;
@@ -3676,6 +3756,12 @@ h3 {
   width: auto;
 }
 
+@media (min-width: 768px) {
+  .links {
+    width: 50vw;
+  }
+}
+
 .links a {
   color: #666;
 }
@@ -3687,8 +3773,7 @@ h3 {
 @media (min-width: 992px) {
   .links {
     background: #242321;
-    padding-top: 40px;
-    padding-bottom: 60px;
+    padding: 3rem 0 5rem;
     overflow: hidden;
     position: fixed;
     left: 0;
@@ -3728,6 +3813,12 @@ h3 {
   }
 }
 
+@media (min-width: 992px) and (min-width: 1200px) {
+  .links {
+    padding: 5rem 0 7rem;
+  }
+}
+
 .page-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3736,11 +3827,17 @@ h3 {
       -ms-flex-align: center;
           align-items: center;
   line-height: 1;
-  padding: 2rem 0;
+  padding: 2rem 0 4rem;
+}
+
+@media (min-width: 992px) {
+  .page-menu {
+    padding: 4rem 0;
+  }
 }
 
 .page-menu .logo {
-  font-size: 3rem;
+  font-size: 3rem 0 6rem;
 }
 
 .nav-list {
@@ -3865,22 +3962,50 @@ h3 {
           transform: translateY(-8px) rotateZ(45deg);
 }
 
-.hero {
+.hero__text {
+  margin-left: 10%;
   text-align: center;
 }
 
-.title {
-  font-weight: bold;
-  margin: 0 0 4rem 0;
+@media (min-width: 992px) {
+  .hero__text {
+    text-align: left;
+  }
 }
 
-.title span {
+.hero__title {
+  display: inline-block;
+}
+
+.hero__title h1 {
+  font-weight: bold;
+}
+
+@media (min-width: 1200px) {
+  .hero__title h1 {
+    font-size: 5rem;
+  }
+}
+
+.hero__title h2 {
   color: #e96443;
   font-weight: 300;
 }
 
-.intro-text {
-  margin-bottom: 4rem;
+@media (min-width: 576px) {
+  .hero__title h2 {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero__title h2 {
+    font-size: 4rem;
+  }
+}
+
+.hero__intro {
+  margin: 4rem 0;
   line-height: 2;
 }
 
