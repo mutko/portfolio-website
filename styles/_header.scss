@@ -4,11 +4,14 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(0, 0, 0, .6);
+  background: rgba(0, 0, 0, 0.6);
   z-index: 10;
   display: none;
 }
 .links {
+  .container {
+    width: auto;
+  }
   position: fixed;
   top: 0;
   left: 0;
@@ -19,17 +22,42 @@
   z-index: 20;
   overflow-y: auto;
   transform: translateX(-100%);
-  transition: transform .5s;
+  transition: transform 0.5s;
   a {
-    color: $textColor; 
+    color: $textColor;
     &.active,
     &.email-link {
       color: $altColor;
     }
   }
   @media (min-width: $l) {
+    .container {
+      @include flexCenter();
+      width: 960px;
+      @media (min-width: $xl) {
+        width: 1140px;
+      }
+    }
+    background: $navBg;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: auto;
+    height: auto;
+    // visibility: hidden;
+    h2,
+    a {
+      color: #fff;
+    }
     transform: translateX(0);
     transform: translateY(-100%);
+    .hire {
+      margin-left: auto;
+    }
   }
 }
 .page-menu {
@@ -50,17 +78,28 @@
       &:hover {
         color: $altColor;
       }
+      @media (min-width: $l) {
+        padding: 0.5rem 1rem;
+      }
     }
   }
 }
 .hire {
   padding: 2rem;
   p {
-    padding: .5rem 0 1rem;
+    padding: 0.5rem 0 1rem;
   }
 }
-.is-open {
+.active {
   display: block;
+  @media (min-width: $l) {
+    display: none;
+  }
+}
+.menu-open {
+  @media (max-width: $l) {
+    display: block;
+  }
   transform: translateX(0);
   @media (min-width: $l) {
     transform: translateY(0);
@@ -75,7 +114,7 @@
   display: block;
   position: relative;
   z-index: 30;
-  transform: all ease .3s;
+  transform: all ease 0.3s;
   cursor: pointer;
 }
 .hamb-menu {
@@ -83,20 +122,20 @@
   width: 23px;
   height: 2px;
   position: absolute;
-  background: $altColor;;
+  background: $altColor;
   white-space: nowrap;
-  transition: all ease .3s;
+  transition: all ease 0.3s;
   top: 22px;
   right: 0;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   &::before,
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     display: inline-block;
     width: 23px;
     height: 2px;
-    transition: all ease .3s;
+    transition: all ease 0.3s;
     outline: 1px solid transparent;
     left: 0;
     background: $altColor;
@@ -110,7 +149,7 @@
 }
 .toggle.open {
   .hamb-menu {
-    background-color: transparent!important;
+    background-color: transparent !important;
     &::before {
       transform: translateY(8px) rotateZ(-45deg);
     }
