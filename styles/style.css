@@ -3719,8 +3719,9 @@ h3 {
   padding-bottom: 1rem;
 }
 
-.section p {
-  padding-bottom: 2rem;
+.page-header {
+  -webkit-transition: margin-top 0.5s;
+  transition: margin-top 0.5s;
 }
 
 .overlay {
@@ -3772,10 +3773,10 @@ h3 {
 
 @media (min-width: 992px) {
   .links {
+    position: absolute;
     background: #242321;
     padding: 3rem 0 5rem;
     overflow: hidden;
-    position: fixed;
     left: 0;
     right: 0;
     top: 0;
@@ -3840,8 +3841,10 @@ h3 {
   font-size: 3rem 0 6rem;
 }
 
-.nav-list {
-  line-height: 1;
+@media (max-width: 992px) {
+  .nav-list {
+    line-height: 1;
+  }
 }
 
 .nav-list li {
@@ -3871,24 +3874,16 @@ h3 {
   padding: 0.5rem 0 1rem;
 }
 
-.active {
-  display: block;
-}
-
-@media (min-width: 992px) {
+@media (max-width: 992px) {
   .active {
-    display: none;
+    display: block;
   }
-}
-
-.menu-open {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
 }
 
 @media (max-width: 992px) {
   .menu-open {
-    display: block;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 
@@ -3896,6 +3891,18 @@ h3 {
   .menu-open {
     -webkit-transform: translateY(0);
             transform: translateY(0);
+  }
+}
+
+@media (min-width: 992px) {
+  .slide-margin {
+    margin-top: 333px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .slide-margin {
+    margin-top: 360px;
   }
 }
 
@@ -3957,9 +3964,26 @@ h3 {
           transform: translateY(8px) rotateZ(-45deg);
 }
 
+@media (min-width: 992px) {
+  .toggle.open .hamb-menu::before {
+    top: 100%;
+    -webkit-transform: rotate(-48deg) translate(-2px, -5px);
+            transform: rotate(-48deg) translate(-2px, -5px);
+  }
+}
+
 .toggle.open .hamb-menu::after {
   -webkit-transform: translateY(-8px) rotateZ(45deg);
           transform: translateY(-8px) rotateZ(45deg);
+}
+
+@media (min-width: 992px) {
+  .toggle.open .hamb-menu::after {
+    -webkit-transform: rotate(45deg) translate(5px, -5px);
+            transform: rotate(45deg) translate(5px, -5px);
+    -webkit-transform-origin: 100% 0;
+            transform-origin: 100% 0;
+  }
 }
 
 @media (min-width: 768px) {
@@ -4002,6 +4026,81 @@ h3 {
 .hero__intro {
   margin: 4rem 0;
   line-height: 2;
+}
+
+.about-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about-me__text {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.about-me__img {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.progress-outer {
+  width: 500px;
+  text-align: center;
+}
+
+.progress {
+  background: rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+          box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.progress-inner {
+  height: 18px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.05)));
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  -webkit-transition: 0.4s linear;
+  transition: 0.4s linear;
+  -webkit-transition-property: width, background-color;
+  transition-property: width, background-color;
+}
+
+.progress-move .progress-inner {
+  width: 80%;
+  background-color: #ef476f;
+}
+
+.animation {
+  -webkit-animation: progressAnimation 3s;
+          animation: progressAnimation 3s;
+}
+
+@-webkit-keyframes progressAnimation {
+  0% {
+    width: 10%;
+    background-color: #f9bcca;
+  }
+  100% {
+    width: 80%;
+    background-color: #ef476f;
+  }
+}
+
+@keyframes progressAnimation {
+  0% {
+    width: 10%;
+    background-color: #f9bcca;
+  }
+  100% {
+    width: 80%;
+    background-color: #ef476f;
+  }
 }
 
 .projects p a {
@@ -4101,8 +4200,8 @@ h3 {
   height: 50px;
   border-radius: 50%;
   border: 2px solid rgba(255, 255, 255, 0.3);
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .social-list li a:hover {
@@ -4110,12 +4209,14 @@ h3 {
   color: #e96443;
 }
 
-.social-list li a .fab, .social-list li a .fas, .social-list li a .fa {
+.social-list li a .fab,
+.social-list li a .fas,
+.social-list li a .fa {
   line-height: 50px;
 }
 
 .copyright {
   color: #fff;
-  opacity: .7;
+  opacity: 0.7;
 }
 /*# sourceMappingURL=style.css.map */

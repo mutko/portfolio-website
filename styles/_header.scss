@@ -1,3 +1,6 @@
+.page-header {
+  transition: margin-top 0.5s;
+}
 .overlay {
   position: fixed;
   top: 0;
@@ -41,16 +44,15 @@
         width: 1140px;
       }
     }
+    position: absolute;
     background: $navBg;
     padding: 3rem 0 5rem;
     overflow: hidden;
-    position: fixed;
     left: 0;
     right: 0;
     top: 0;
     width: auto;
     height: auto;
-    // visibility: hidden;
     h2,
     a {
       color: #fff;
@@ -77,7 +79,9 @@
   }
 }
 .nav-list {
-  line-height: 1;
+  @media (max-width: $l) {
+    line-height: 1;
+  }
   li {
     text-transform: uppercase;
     a {
@@ -99,21 +103,26 @@
   }
 }
 .active {
-  display: block;
-  @media (min-width: $l) {
-    display: none;
+  @media (max-width: $l) {
+    display: block;
   }
 }
 .menu-open {
   @media (max-width: $l) {
-    display: block;
+    transform: translateX(0);
   }
-  transform: translateX(0);
   @media (min-width: $l) {
     transform: translateY(0);
   }
 }
-
+.slide-margin {
+  @media (min-width: $l) {
+    margin-top: 333px;
+  }
+  @media (min-width: $xl) {
+    margin-top: 360px;
+  }
+}
 .toggle {
   margin-left: auto;
   min-width: 44px;
@@ -160,9 +169,17 @@
     background-color: transparent !important;
     &::before {
       transform: translateY(8px) rotateZ(-45deg);
+      @media (min-width: $l) {
+        top: 100%;
+        transform: rotate(-48deg) translate(-2px, -5px);
+      }
     }
     &::after {
       transform: translateY(-8px) rotateZ(45deg);
+      @media (min-width: $l) {
+        transform: rotate(45deg) translate(5px, -5px);
+        transform-origin: 100% 0;
+      }
     }
   }
 }

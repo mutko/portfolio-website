@@ -18,43 +18,40 @@
    -->
   </head>
   <body>
-    <!-- Page Header -->
-    <header class="page-header">
+    <div class="overlay" id="overlay"></div>
+    <div class="links" id="links">
       <div class="container">
-        <div class="overlay" id="overlay"></div>
-        <div class="links" id="links">
-          <div class="container">
-            <nav class="page-nav">
-              <ul class="nav-list">
-                <li class="nav-link">
-                  <a href="index.html" title="Homepage" class="active">Home</a>
-                </li>
-                <li class="nav-link">
-                  <a href="about.html" title="Read about me">About</a>
-                </li>
-                <li class="nav-link">
-                  <a href="works.html" title="See my work">Works</a>
-                </li>
-                <li class="nav-link">
-                  <a href="contact.html" title="Contact me">Contact</a>
-                </li>
-              </ul>
-            </nav>
-            <div class="hire">
-              <h2>Hire me.</h2>
-              <p>
-                Like my work? Arrange a meeting with me, I'll be happy to work
-                for you!
-              </p>
-              <a
-                href="mailto:bmutko@gmail.com?Subject=I want to hire you!"
-                class="email-link"
-                >bmutko@gmail.com</a
-              >
-            </div>
-          </div>
+        <nav class="page-nav">
+          <ul class="nav-list">
+            <li class="nav-link">
+              <a href="index.html" title="Homepage" class="active">Home</a>
+            </li>
+            <li class="nav-link">
+              <a href="works.html" title="See my work">Works</a>
+            </li>
+            <li class="nav-link">
+              <a href="contact.html" title="Contact me">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="hire">
+          <h2>Hire me.</h2>
+          <p>
+            Like my work? Arrange a meeting with me, I'll be happy to work for
+            you!
+          </p>
+          <a
+            href="mailto:bmutko@gmail.com?Subject=I want to hire you!"
+            class="email-link"
+            >bmutko@gmail.com</a
+          >
         </div>
+      </div>
+    </div>
 
+    <!-- Page Header -->
+    <header id="page-header" class="page-header">
+      <div class="container">
         <div class="page-menu">
           <div class="logo">
             <a href="index.html">B</a>
@@ -92,6 +89,91 @@
     </section>
     <!-- END Hero -->
 
+    <!-- Services -->
+    <section class="section about">
+      <div class="container">
+        <div class="about-me">
+          <div class="about-me__text">
+            <div>
+              <h2>Branko Bozovic</h2>
+              <p>Junior front-end developer</p>
+            </div>
+            <div>
+              <p>
+                My main professional goal is to find a job that will give me an
+                opportunity to deepen and improve previously acquired
+                programming skills, engage in interesting and creative projects
+                and raise my Front-End development qualifications. Mainly I want
+                to focus on learning JavaScript. Also, I put a lot of work to
+                write a clear and semantically correct code.
+              </p>
+              <p>
+                Any spare time I have to work on side projects to further my
+                skills so that I can apply these to real projects.
+              </p>
+            </div>
+            <div>
+              <p><i class="far fa-chart-bar"></i> The skills</p>
+
+              <ul class="skill-list">
+                <li>
+                  <div class="progress-title">
+                    <p>
+                      <span class="progres-title__big">HTML</span>
+                      <span class="progress-title__small">(html/html5)</span>
+                    </p>
+                  </div>
+                  <div class="progress-outer">
+                    <div class="progress progress-move">
+                      <div class="progress-inner"></div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <i class="fab fa-css3-alt"></i>
+                  css/css3, bem
+                </li>
+                <li>
+                  <i class="fab fa-sass"></i>
+                  sass/scss
+                </li>
+                <li>
+                  <i class="fab fa-js"></i>
+                  es5, es6, ajax
+                </li>
+                <li>
+                  <i class="fab fa-bootstrap"></i>
+                  v3, v4
+                </li>
+                <li>
+                  <i class="fab fa-vuejs"></i>
+                </li>
+                <li>
+                  <i class="fab fa-git"></i>
+                  version control, git/github
+                </li>
+                HTML5, CSS3, SASS/SCSS, JS, es5, es6, api's, AJAX, jQuery,
+                VUE.JS, Bootstrap, Version Control/Git, npm, Webpack, Mobile
+                first, responsive, psd to html...
+              </ul>
+            </div>
+            <div>
+              <a href="#" download class="btn"
+                >Download resume <i class="fas fa-file-download"></i
+              ></a>
+            </div>
+          </div>
+          <div class="about-me__img">
+            <img src="https://via.placeholder.com/250" alt="My picture" />
+          </div>
+        </div>
+      </div>
+      <!-- END container -->
+    </section>
+    <!-- END Services -->
+
+    <!-- MAYBE SERVICES BEFORE PROJECTS  -->
+
     <!-- Projects -->
     <section class="section projects">
       <div class="container">
@@ -120,18 +202,6 @@
       <!-- END container -->
     </section>
     <!-- END Projects -->
-
-    <!-- MAYBE SERVICES BEFORE PROJECTS  -->
-
-    <!-- Services -->
-    <section class="section services">
-      <div class="container">
-        <h2>Skills & services</h2>
-        <p>HTML5, CSS3, JS, Vue...</p>
-      </div>
-      <!-- END container -->
-    </section>
-    <!-- END Services -->
 
     <!-- Hire me -->
     <section class="section hire-me">
