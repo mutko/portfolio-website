@@ -91,84 +91,102 @@
 
     <!-- Services -->
     <section class="section about">
-      <div class="container">
-        <div class="about-me">
-          <div class="about-me__text">
-            <div>
-              <h2>Branko Bozovic</h2>
-              <p>Junior front-end developer</p>
-            </div>
-            <div>
-              <p>
-                My main professional goal is to find a job that will give me an
-                opportunity to deepen and improve previously acquired
-                programming skills, engage in interesting and creative projects
-                and raise my Front-End development qualifications. Mainly I want
-                to focus on learning JavaScript. Also, I put a lot of work to
-                write a clear and semantically correct code.
-              </p>
-              <p>
-                Any spare time I have to work on side projects to further my
-                skills so that I can apply these to real projects.
-              </p>
-            </div>
-            <div>
-              <p><i class="far fa-chart-bar"></i> The skills</p>
+      <div>
+        <h2 class="section-title">About me.</h2>
+      </div>
 
-              <ul class="skill-list">
-                <li>
-                  <div class="progress-title">
-                    <p>
-                      <span class="progres-title__big">HTML</span>
-                      <span class="progress-title__small">(html/html5)</span>
-                    </p>
-                  </div>
-                  <div class="progress-outer">
-                    <div class="progress progress-move">
-                      <div class="progress-inner"></div>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <i class="fab fa-css3-alt"></i>
-                  css/css3, bem
-                </li>
-                <li>
-                  <i class="fab fa-sass"></i>
-                  sass/scss
-                </li>
-                <li>
-                  <i class="fab fa-js"></i>
-                  es5, es6, ajax
-                </li>
-                <li>
-                  <i class="fab fa-bootstrap"></i>
-                  v3, v4
-                </li>
-                <li>
-                  <i class="fab fa-vuejs"></i>
-                </li>
-                <li>
-                  <i class="fab fa-git"></i>
-                  version control, git/github
-                </li>
-                HTML5, CSS3, SASS/SCSS, JS, es5, es6, api's, AJAX, jQuery,
-                VUE.JS, Bootstrap, Version Control/Git, npm, Webpack, Mobile
-                first, responsive, psd to html...
-              </ul>
-            </div>
-            <div>
-              <a href="#" download class="btn"
-                >Download resume <i class="fas fa-file-download"></i
-              ></a>
-            </div>
-          </div>
-          <div class="about-me__img">
-            <img src="https://via.placeholder.com/250" alt="My picture" />
-          </div>
+      <article class="about-me__text">
+        <div class="container">
+          <p>
+            Hey, Thanks for stopping by. My name’s Branko and I’m a front-end
+            developer from Belgrade, Serbia.
+          </p>
+          <p>
+            My main professional goal is to find a job that will give me an
+            opportunity to deepen and improve previously acquired programming
+            skills, engage in interesting and creative projects and raise my
+            Front-End development qualifications.
+            <!--  Mainly I want to focus on
+            learning JavaScript. Also, I put a lot of work to write a clear and
+            semantically correct code. -->
+          </p>
+          <p>
+            Any spare time I have to work on side projects to further my skills
+            so that I can apply these to real projects.
+          </p>
+        </div>
+      </article>
+
+      <div class="about-me__skills">
+        <div class="container">
+          <h3 class="alt-title">The skills</h3>
+
+          <ul class="skill-list">
+            <li>
+              <i class="fab fa-html5 skill-html"></i>
+              <p>HTML</p>
+              <p>html/html5</p>
+            </li>
+            <li>
+              <i class="fab fa-css3-alt skill-css"></i>
+              <p>CSS</p>
+              <p>css/css3/bem</p>
+            </li>
+            <li>
+              <i class="fab fa-js skill-js"></i>
+              <p>JavaScript</p>
+              <p>es5/es6/api's</p>
+            </li>
+            <li>
+              <i class="fab fa-sass skill-sass"></i>
+              <p>SASS</p>
+              <p>sass/scss</p>
+            </li>
+            <li>
+              <i class="fab fa-vuejs skill-vue"></i>
+              <p>VueJS</p>
+              <p>vuejs/vuex</p>
+            </li>
+            <li>
+              <i class="fab fa-git skill-git"></i>
+              <p>Version Control</p>
+              <p>git/github</p>
+            </li>
+            <li>
+              <i class="fab fa-bootstrap skill-bootstrap"></i>
+              <p>Bootstrap</p>
+              <p>v3/v4</p>
+            </li>
+            <li>
+              <svg
+                class="skill-jquery"
+                viewBox="0 0 100 100"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M80,67C47,121-25,60,10,22C5,89,70,80,80,67zM30,16C2,42,56,87,80,47C70,57,24,57,30,16M50,10C45,34,72,37,80,31C57,55,32,21,50,10z"
+                />
+              </svg>
+              <p>jQuery</p>
+              <p>jQuery</p>
+            </li>
+            <li>
+              <i class="fas fa-cogs skill-taskers"></i>
+              <p>Task Runners</p>
+              <p>gulp/webpack</p>
+            </li>
+            <li>
+              <i class="fas fa-mobile-alt skill-responsive"></i>
+              <p>Responsive</p>
+              <p>mobile first/responsive</p>
+            </li>
+          </ul>
         </div>
       </div>
-      <!-- END container -->
+      <div class="about-me__resume">
+        <p class="section-title">Download resume</p>
+        <a href="#" download class="btn">cv <i class="fas fa-file-pdf"></i></a>
+      </div>
     </section>
     <!-- END Services -->
 
@@ -177,7 +195,7 @@
     <!-- Projects -->
     <section class="section projects">
       <div class="container">
-        <h2>Works</h2>
+        <h2 class="section-title">Works</h2>
         <p>
           Below are listed few recent front-end projects.
           <a href="works.html" title="See all my work">See all projects.</a>
