@@ -14,6 +14,9 @@
 .links {
   .container {
     width: auto;
+    @media (max-width: $l) {
+      padding: 0;
+    }
   }
   position: fixed;
   top: 0;
@@ -59,9 +62,6 @@
     }
     transform: translateX(0);
     transform: translateY(-100%);
-    .hire {
-      margin-left: auto;
-    }
     @media (min-width: $xl) {
       padding: 5rem 0 7rem;
     }
@@ -70,7 +70,7 @@
 .page-menu {
   @include flexCenter();
   line-height: 1;
-  padding: 2rem 0 4rem;
+  padding: 1.5rem 0 3rem;
   @media (min-width: $l) {
     padding: 4rem 0;
   }
@@ -91,15 +91,21 @@
         color: $altColor;
       }
       @media (min-width: $l) {
-        padding: 0.5rem 1rem;
+        padding: 0.5rem 2rem;
       }
     }
   }
 }
 .hire {
-  padding: 2rem;
+  padding: 1.5rem 2rem;
+  @media (min-width: $l) {
+    margin-left: auto;
+  }
   p {
     padding: 0.5rem 0 1rem;
+    @media (max-width: $l) {
+      line-height: 1.4;
+    }
   }
 }
 .active {
@@ -139,7 +145,7 @@
   width: 23px;
   height: 2px;
   position: absolute;
-  background: $altColor;
+  @include colorBg();
   white-space: nowrap;
   transition: all ease 0.3s;
   top: 22px;
@@ -155,7 +161,7 @@
     transition: all ease 0.3s;
     outline: 1px solid transparent;
     left: 0;
-    background: $altColor;
+    @include colorBg();
   }
   &::before {
     top: -8px;
@@ -166,7 +172,7 @@
 }
 .toggle.open {
   .hamb-menu {
-    background-color: transparent !important;
+    background: transparent !important;
     &::before {
       transform: translateY(8px) rotateZ(-45deg);
       @media (min-width: $l) {

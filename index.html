@@ -71,16 +71,14 @@
         <div class="hero__text">
           <div class="hero__title">
             <h1>
+              <span class="hero__title--first">Junior</span>
+              <br />
               Front-end developer
             </h1>
-            <h2>Junior</h2>
           </div>
           <p class="hero__intro">
-            Hi, I'm Branko, 32 year old junior front-end developer based in
-            Belgrade, Serbia.
-            <!-- I created this website to present my current skills 
-              and examples of my code, which could possibly help me find my first
-              job as a front-end developer. -->
+            My goal is to build fast, small and medium web apps that clearly
+            communicate with users.
           </p>
           <a href="contact.html" class="btn">Contact Me</a>
         </div>
@@ -98,19 +96,11 @@
       <article class="about-me__text">
         <div class="container">
           <p>
-            Hey, Thanks for stopping by. My name’s Branko and I’m a front-end
-            developer from Belgrade, Serbia.
-          </p>
-          <p>
-            My main professional goal is to find a job that will give me an
-            opportunity to deepen and improve previously acquired programming
-            skills, engage in interesting and creative projects and raise my
-            Front-End development qualifications.
-            <!--  Mainly I want to focus on
-            learning JavaScript. Also, I put a lot of work to write a clear and
-            semantically correct code. -->
-          </p>
-          <p>
+            Hey, Thanks for stopping by. I'm Branko, 32 year old junior
+            front-end developer based in Belgrade, Serbia. I would like to find
+            a job that will give me an opportunity to deepen and improve
+            previously acquired programming skills, engage in interesting and
+            creative projects and raise my front-end development qualifications.
             Any spare time I have to work on side projects to further my skills
             so that I can apply these to real projects.
           </p>
@@ -119,73 +109,90 @@
 
       <div class="about-me__skills">
         <div class="container">
-          <h3 class="alt-title">The skills</h3>
+          <h3 class="section-title">The skills</h3>
 
           <ul class="skill-list">
-            <li>
-              <i class="fab fa-html5 skill-html"></i>
-              <p>HTML</p>
-              <p>html/html5</p>
+            <li class="skill-html">
+              <i class="fab fa-html5"></i>
+              <div class="tooltip">
+                <p>HTML</p>
+                <p>html/html5</p>
+              </div>
             </li>
-            <li>
-              <i class="fab fa-css3-alt skill-css"></i>
-              <p>CSS</p>
-              <p>css/css3/bem</p>
+            <li class="skill-css">
+              <i class="fab fa-css3-alt"></i>
+              <div class="tooltip">
+                <p>CSS</p>
+                <p>css/css3/bem</p>
+              </div>
             </li>
-            <li>
-              <i class="fab fa-js skill-js"></i>
-              <p>JavaScript</p>
-              <p>es5/es6/api's</p>
+            <li class="skill-sass">
+              <i class="fab fa-sass"></i>
+              <div class="tooltip">
+                <p>SASS</p>
+                <p>sass/scss</p>
+              </div>
             </li>
-            <li>
-              <i class="fab fa-sass skill-sass"></i>
-              <p>SASS</p>
-              <p>sass/scss</p>
+            <li class="skill-bootstrap">
+              <i class="fab fa-bootstrap"></i>
+              <div class="tooltip">
+                <p>Bootstrap</p>
+                <p>v3/v4</p>
+              </div>
             </li>
-            <li>
-              <i class="fab fa-vuejs skill-vue"></i>
-              <p>VueJS</p>
-              <p>vuejs/vuex</p>
+            <li class="skill-responsive">
+              <i class="fas fa-mobile-alt"></i>
+              <div class="tooltip">
+                <p>Responsive</p>
+                <p>mobile first</p>
+              </div>
             </li>
-            <li>
-              <i class="fab fa-git skill-git"></i>
-              <p>Version Control</p>
-              <p>git/github</p>
+            <li class=" skill-js">
+              <i class="fab fa-js"></i>
+              <div class="tooltip">
+                <p>JavaScript</p>
+                <p>es5/es6/api's</p>
+              </div>
             </li>
-            <li>
-              <i class="fab fa-bootstrap skill-bootstrap"></i>
-              <p>Bootstrap</p>
-              <p>v3/v4</p>
+            <li class="skill-vue">
+              <i class="fab fa-vuejs"></i>
+              <div class="tooltip">
+                <p>VueJS</p>
+                <p>vuejs/vuex</p>
+              </div>
             </li>
-            <li>
-              <svg
-                class="skill-jquery"
-                viewBox="0 0 100 100"
-                xmlns="http://www.w3.org/2000/svg"
-              >
+            <li class="skill-jquery">
+              <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M80,67C47,121-25,60,10,22C5,89,70,80,80,67zM30,16C2,42,56,87,80,47C70,57,24,57,30,16M50,10C45,34,72,37,80,31C57,55,32,21,50,10z"
                 />
               </svg>
-              <p>jQuery</p>
-              <p>jQuery</p>
+              <div class="tooltip">
+                <p>jQuery</p>
+                <p>jQuery</p>
+              </div>
             </li>
-            <li>
-              <i class="fas fa-cogs skill-taskers"></i>
-              <p>Task Runners</p>
-              <p>gulp/webpack</p>
+            <li class="skill-taskers">
+              <i class="fas fa-cogs"></i>
+              <div class="tooltip">
+                <p>Task Runners</p>
+                <p>gulp/webpack</p>
+              </div>
             </li>
-            <li>
-              <i class="fas fa-mobile-alt skill-responsive"></i>
-              <p>Responsive</p>
-              <p>mobile first/responsive</p>
+            <li class="skill-git">
+              <i class="fab fa-git"></i>
+              <div class="tooltip">
+                <p>Version Control</p>
+                <p>git/github</p>
+              </div>
             </li>
           </ul>
         </div>
       </div>
       <div class="about-me__resume">
-        <p class="section-title">Download resume</p>
-        <a href="#" download class="btn">cv <i class="fas fa-file-pdf"></i></a>
+        <a href="#" download class="btn"
+          >Download cv <i class="fas fa-file-pdf"></i
+        ></a>
       </div>
     </section>
     <!-- END Services -->
@@ -202,14 +209,14 @@
         </p>
         <div class="few-projects">
           <div class="project-preview">
-            <!-- <div class="project-preview__image">
-              <div class="project-img"> -->
-            <a href="#">
-              <img src="img/mobile.png" alt="" class="phone" id="phone" />
-              <img src="img/ss.png" alt="" class="screenshot" id="ss" />
-            </a>
-            <!-- </div>
-            </div> -->
+            <div class="project-preview__image">
+              <div class="project-image">
+                <a href="#">
+                  <!-- <img src="img/mobile.png" alt="" class="phone" id="phone" /> -->
+                  <img src="img/ss.png" alt="" class="screenshot" id="ss" />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -258,7 +265,6 @@
         <div class="box-cta">
           <p>Have a job opportunity or freelance project?</p>
           <a href="contact.html" class="btn btn--box">Contact Me</a>
-          <a href="#" class="btn btn--box">Hire on Upwork</a>
         </div>
         <a href="index.html" title="Logo link to homepage" class="footer-logo"
           >B</a

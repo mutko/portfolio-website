@@ -16,3 +16,13 @@ overlay.addEventListener("click", function() {
   menu.classList.toggle("menu-open");
   hambBtn.classList.toggle("open");
 });
+
+const img = document.querySelector(".project-image");
+const bg = document.querySelector(".project-preview__image");
+function outputSize() {
+  console.log("Width is " + img.offsetWidth);
+  console.log("Height is " + img.offsetHeight);
+  bg.style.height = img.offsetHeight + 200 + "px";
+}
+outputSize();
+new ResizeObserver(outputSize).observe(img);

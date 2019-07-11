@@ -1,60 +1,112 @@
 .about-me__text {
-  line-height: 2;
-  padding-bottom: 5rem;
+  padding-bottom: 2rem;
   p {
     padding-bottom: 1.5rem;
   }
 }
+.boxed {
+  max-width: 800px;
+  margin: 0 auto;
+}
 
 .skill-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
   grid-template-rows: auto;
+  @media (min-width: $m) {
+    grid-template-columns: repeat(5, 100px);
+    justify-content: center;
+  }
   li {
-    padding-bottom: 4rem;
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
     text-align: center;
-    p:first-of-type {
-      text-transform: uppercase;
-      color: #444;
-      font-weight: bold;
-      padding: 0.8rem 0 0.3rem 0;
-    }
-    p:last-of-type {
-      font-size: 1.3rem;
+    position: relative;
+    @media (min-width: $l) {
+      &:hover .tooltip {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
     i {
-      font-size: 5rem;
+      font-size: 4rem;
+      color: #444;
+      transition: color 0.3s;
     }
   }
 }
-.skill-html {
-  color: #e54d26;
+.skill-html:hover {
+  i {
+    color: #e54d26;
+  }
 }
-.skill-css {
-  color: #2965f1;
+.skill-css:hover {
+  i {
+    color: #2965f1;
+  }
 }
-.skill-sass {
-  color: #cd6799;
+.skill-sass:hover {
+  i {
+    color: #cd6799;
+  }
 }
-.skill-js {
-  color: #f7df1e;
+.skill-bootstrap:hover {
+  i {
+    color: #9933cc;
+  }
 }
-.skill-vue {
-  color: #41b883;
+.skill-responsive:hover {
+  i {
+    color: $altColor;
+  }
 }
-.skill-git {
-  color: #f1502f;
+.skill-js:hover {
+  i {
+    color: #f7df1e;
+  }
 }
-.skill-bootstrap {
-  color: #9933cc;
+.skill-vue:hover {
+  i {
+    color: #41b883;
+  }
 }
 .skill-jquery {
-  height: 80px;
-  fill: #0769ad;
+  svg {
+    height: 56px;
+    fill: #444;
+  }
+  &:hover {
+    svg {
+      fill: #0769ad;
+    }
+  }
 }
-.skill-taskers {
-  color: #e65100;
+.skill-taskers:hover {
+  i {
+    color: $thirdColor;
+  }
 }
-.skill-responsive {
-  color: #2bbbad;
+.skill-git:hover {
+  i {
+    color: #f1502f;
+  }
+}
+
+.tooltip {
+  padding-top: 0.3rem;
+  line-height: 1.4;
+  p:first-of-type {
+    text-transform: uppercase;
+    color: #444;
+    font-weight: bold;
+  }
+  p:last-of-type {
+    font-size: 0.85rem;
+  }
+
+  @media (min-width: $l) {
+    opacity: 0;
+    transform: translateY(5px);
+    transition: opacity 0.3s, transform 0.3s ease;
+  }
 }

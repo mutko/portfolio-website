@@ -1,6 +1,7 @@
 // colors
 $mainColor: #242321;
 $altColor: #e96443;
+$thirdColor: #c14e7c;
 $textColor: #666;
 $navBg: #242321;
 
@@ -15,4 +16,17 @@ $xxl: 1920px;
 @mixin flexCenter() {
   display: flex;
   align-items: center;
+}
+@mixin colorFront() {
+  color: $altColor;
+  background: $altColor;
+  background: linear-gradient(to right, $altColor 0%, $thirdColor 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+@mixin colorBg() {
+  background: $altColor;
+  background: linear-gradient(to right, $altColor 0%, $thirdColor 100%);
 }
