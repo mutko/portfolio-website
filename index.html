@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Branko | Frontend developer</title>
     <script src="https://kit.fontawesome.com/4ebaaf3906.js"></script>
+
     <link rel="stylesheet" href="styles/style.css" />
     <!-- 
     Inspitation
@@ -80,7 +81,7 @@
             My goal is to build fast, small and medium web apps that clearly
             communicate with users.
           </p>
-          <a href="contact.html" class="btn">Contact Me</a>
+          <a href="contact.html" class="btn btn--prime">Contact Me</a>
         </div>
       </div>
       <!-- END container -->
@@ -104,6 +105,9 @@
             Any spare time I have to work on side projects to further my skills
             so that I can apply these to real projects.
           </p>
+          <div class="about-me__resume">
+            <a href="#" download class="btn btn--light">Download resume <i class="fas fa-download"></i></a>
+          </div>
         </div>
       </article>
 
@@ -189,11 +193,6 @@
           </ul>
         </div>
       </div>
-      <div class="about-me__resume">
-        <a href="#" download class="btn"
-          >Download cv <i class="fas fa-file-pdf"></i
-        ></a>
-      </div>
     </section>
     <!-- END Services -->
 
@@ -209,18 +208,20 @@
         </p>
         <div class="few-projects">
           <div class="project-preview">
-            <div class="project-preview__image">
               <div class="project-image">
                 <a href="#">
-                  <!-- <img src="img/mobile.png" alt="" class="phone" id="phone" /> -->
-                  <img src="img/ss.png" alt="" class="screenshot" id="ss" />
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="img/mobile.png">
+                        <source media="(min-width: 768px)" srcset="img/laptop.png">
+                        <img src="img/mobile.png" alt="Flowers" style="width:auto;">
+                      </picture>
                 </a>
               </div>
             </div>
           </div>
         </div>
 
-        <a href="works.html" title="See all my work" class="btn"
+        <a href="works.html" title="See all my work" class="btn btn--prime"
           >View All Projects</a
         >
       </div>
@@ -229,27 +230,27 @@
     <!-- END Projects -->
 
     <!-- Hire me -->
-    <section class="section hire-me">
+    <!-- <section class="section hire-me"> 
       <div class="container">
         <h2>Hire me</h2>
         <p>
           If you’re looking for a Frontend Developer who will join your team,
           look no further.
         </p>
-        <a href="contact.html" class="btn">Contact me</a>
-      </div>
+        <a href="contact.html" class="btn btn--prime">Contact me</a>
+      </div> -->
       <!-- END container -->
-    </section>
+    <!-- </section> -->
     <!-- END Hire me -->
 
     <!-- Testimonials -->
-    <section class="section test">
+   <!-- <section class="section test">
       <div class="container">
         <h2>Testimonials</h2>
         <p>People I've worked with have said some nice things..</p>
-      </div>
+      </div> -->
       <!-- END container -->
-    </section>
+    <!-- </section> -->
     <!-- END Testimonials -->
 
     <!-- Hire Freelance -->
@@ -264,7 +265,7 @@
       <div class="container">
         <div class="box-cta">
           <p>Have a job opportunity or freelance project?</p>
-          <a href="contact.html" class="btn btn--box">Contact Me</a>
+          <a href="contact.html" class="btn btn--prime">Contact Me</a>
         </div>
         <a href="index.html" title="Logo link to homepage" class="footer-logo"
           >B</a
@@ -291,7 +292,7 @@
             </a>
           </li>
         </ul>
-        <p class="copyright">Handcrafted by me &copy;</p>
+        <p class="copyright">Handcrafted by me &copy; 2019</p>
       </div>
       <!-- END container -->
     </footer>
