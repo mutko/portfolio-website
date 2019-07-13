@@ -1,13 +1,19 @@
 .page-header {
   transition: margin-top 0.5s;
 }
+.header-logo {
+  width: 100px;
+  svg {
+    fill: $mainColor;
+  }
+}
 .overlay {
   position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.45);
   z-index: 10;
   display: none;
 }
@@ -48,7 +54,7 @@
       }
     }
     position: absolute;
-    background: $navBg;
+    background: $mainColor;
     padding: 3rem 0 5rem;
     overflow: hidden;
     left: 0;
@@ -73,9 +79,6 @@
   padding: 1.5rem 0 3rem;
   @media (min-width: $l) {
     padding: 4rem 0;
-  }
-  .logo {
-    font-size: 3rem 0 6rem;
   }
 }
 .nav-list {
@@ -146,7 +149,7 @@
   width: 23px;
   height: 2px;
   position: absolute;
-  background-color: $altColor;
+  background-color: $mainColor;
   white-space: nowrap;
   transition: all 0.3s ease;
   top: 22px;
@@ -162,7 +165,7 @@
     transition: all 0.3s ease;
     outline: 1px solid transparent;
     left: 0;
-    background-color: $altColor;
+    background-color: $mainColor;
   }
   &::before {
     top: -8px;

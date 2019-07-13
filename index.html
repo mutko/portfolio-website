@@ -54,8 +54,16 @@
     <header id="page-header" class="page-header">
       <div class="container">
         <div class="page-menu">
-          <div class="logo">
-            <a href="index.html">B</a>
+          <div class="header-logo">
+            <a
+              href="index.html"
+              title="Logo link to homepage"
+            >
+            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+              <path d="M308.66,463.3a62.4,62.4,0,0,1-62.86-62.38V265.41a57.15,57.15,0,0,0-57.14-57.15h0V400.92q0,5.06.42,10c5.14,61,56.8,109.08,119.58,109.08a120.14,120.14,0,0,0,84.48-34.58,128.43,128.43,0,0,1-28.59-55.95A62.92,62.92,0,0,1,308.66,463.3Z"/>
+              <path d="M610.92,390.92c-5.14-61-56.8-109.08-119.58-109.08a119.94,119.94,0,0,0-62.86,17.68V265.41a57.15,57.15,0,0,0-57.14-57.15h0v79.6a130.82,130.82,0,0,1,35.52,28.56,129.23,129.23,0,0,1,21.62,34.42,126.78,126.78,0,0,1,7,21.53A62.82,62.82,0,0,1,554.2,400.92c0,34.45-28.14,62.38-62.86,62.38-33.46,0-60.8-25.95-62.74-58.67-.07-1.23-.12-2.46-.12-3.71h.18c0-1.24,0-2.48-.06-3.71,0-.95-.07-1.89-.12-2.84A118,118,0,0,0,400,323.78,120.52,120.52,0,0,0,255.8,294v73.15a63,63,0,0,1,115.54,29.2l.06.83c.07,1.23.12,2.46.12,3.71h-.18c0,1.24,0,2.48.06,3.71A118,118,0,0,0,400,478.06,120.14,120.14,0,0,0,491.34,520c66.17,0,120-53.42,120-119.08Q611.34,395.87,610.92,390.92Z"/>
+            </svg>
+         </a>
           </div>
           <div class="toggle" id="hamb">
             <span class="hamb-menu"></span>
@@ -106,14 +114,16 @@
             so that I can apply these to real projects.
           </p>
           <div class="about-me__resume">
-            <a href="#" download class="btn btn--light">Download resume <i class="fas fa-download"></i></a>
+            <a href="#" download class="btn btn--light"
+              >Download resume <i class="fas fa-download"></i
+            ></a>
           </div>
         </div>
       </article>
 
       <div class="about-me__skills">
         <div class="container">
-          <h3 class="section-title">The skills</h3>
+          <h2 class="section-title">The skills</h2>
 
           <ul class="skill-list">
             <li class="skill-html">
@@ -196,8 +206,6 @@
     </section>
     <!-- END Services -->
 
-    <!-- MAYBE SERVICES BEFORE PROJECTS  -->
-
     <!-- Projects -->
     <section class="section projects">
       <div class="container">
@@ -208,22 +216,191 @@
         </p>
         <div class="few-projects">
           <div class="project-preview">
-              <div class="project-image">
-                <a href="#">
-                    <picture>
-                        <source media="(max-width: 768px)" srcset="img/mobile.png">
-                        <source media="(min-width: 768px)" srcset="img/laptop.png">
-                        <img src="img/mobile.png" alt="Flowers" style="width:auto;">
-                      </picture>
+            <div class="project-image">
+              <a
+                href="https://mutko.github.io/coffee-shops-foursquareApi/dist/index.html"
+                title="Visit website in new tab"
+                target="_blank"
+              >
+                <picture>
+                  <source media="(max-width: 992px)" srcset="img/mobile.png" />
+                  <source media="(min-width: 992px)" srcset="img/laptop.png" />
+                  <img src="img/mobile.png" alt="App screenshot" />
+                </picture>
+              </a>
+            </div>
+            <div class="project-text">
+              <div class="project-text__inner">
+                <a
+                  href="https://mutko.github.io/coffee-shops-foursquareApi/dist/index.html"
+                  title="Visit website in new tab"
+                  target="_blank"
+                >
+                  <h3>Caffeine Rush</h3>
                 </a>
+                <p class="small">
+                  Caffeine Rush is a app designed to help people find good coffee
+                  within walking distance. It displays coffee shops near user's
+                  current location.
+                </p>
+                <ul>
+                  <li>JavaSript</li>
+                  <li>Foursquare API</li>
+                  <li>OpenStreetMap API</li>
+                  <li>Geolocation API</li>
+                  <li>HTML & SCSS</li>
+                  <li>Webpack & Babel</li>
+                </ul>
+              </div>
+              <div class="project-link">
+                <a
+                  href="https://github.com/mutko/coffee-shops-foursquareApi"
+                  class="btn btn--light"
+                  >See Project on Github <i class="fas fa-code"></i
+                ></a>
               </div>
             </div>
           </div>
-        </div>
+          <!-- END Single Project -->
 
-        <a href="works.html" title="See all my work" class="btn btn--prime"
-          >View All Projects</a
-        >
+          <div class="project-preview">
+            <div class="project-image">
+              <a
+                href="https://mutko.github.io/weather-app/"
+                title="Visit website in new tab"
+                target="_blank"
+              >
+                <picture>
+                  <source media="(max-width: 992px)" srcset="img/mobile.png" />
+                  <source media="(min-width: 992px)" srcset="img/laptop.png" />
+                  <img src="img/mobile.png" alt="App screenshot" />
+                </picture>
+              </a>
+            </div>
+            <div class="project-text">
+              <div class="project-text__inner">
+                <a
+                  href="https://mutko.github.io/weather-app/"
+                  title="Visit website in new tab"
+                  target="_blank"
+                >
+                  <h3>VueJS CRUD App</h3>
+                </a>
+                <p class="small">
+                  Basic CRUD App built with VueJS.
+                </p>
+                <ul>
+                  <li>VueJS</li>
+                  <li>Vuex</li>
+                  <li>Rest API</li>
+                  <li>HTML & SCSS</li>
+                </ul>
+              </div>
+              <div class="project-link">
+                <a
+                  href="https://github.com/mutko/weather-app"
+                  class="btn btn--light"
+                  >See Project on Github <i class="fas fa-code"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <!-- END Single Project -->
+
+          <div class="project-preview">
+            <div class="project-image">
+              <a
+                href="http://varex.rs/"
+                title="Visit website in new tab"
+                target="_blank"
+              >
+                <picture>
+                  <source media="(max-width: 992px)" srcset="img/mobile.png" />
+                  <source media="(min-width: 992px)" srcset="img/laptop.png" />
+                  <img src="img/mobile.png" alt="App screenshot" />
+                </picture>
+              </a>
+            </div>
+            <div class="project-text">
+              <div class="project-text__inner">
+                <a
+                  href="http://varex.rs/"
+                  title="Visit website in new tab"
+                  target="_blank"
+                >
+                  <h3>Varex Welding Company</h3>
+                </a>
+                <p class="small">
+                  Website for Varex Welding Company.
+                </p>
+                <ul>
+                  <li>HTML & CSS</li>
+                  <li>JavaSript</li>
+                  <li>jQuery</li>
+                  <li>Structured Data</li>
+                </ul>
+              </div>
+              <div class="project-link">
+                <a
+                  href="https://github.com/mutko/varex-welding-company"
+                  class="btn btn--light"
+                  >See Project on Github <i class="fas fa-code"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <!-- END Single Project -->
+          <div class="project-preview">
+            <div class="project-image">
+              <a
+                href="https://mutko.github.io/weather-app/"
+                title="Visit website in new tab"
+                target="_blank"
+              >
+                <picture>
+                  <source media="(max-width: 992px)" srcset="img/mobile.png" />
+                  <source media="(min-width: 992px)" srcset="img/laptop.png" />
+                  <img src="img/mobile.png" alt="App screenshot" />
+                </picture>
+              </a>
+            </div>
+            <div class="project-text">
+              <div class="project-text__inner">
+                <a
+                  href="https://mutko.github.io/weather-app/"
+                  title="Visit website in new tab"
+                  target="_blank"
+                >
+                  <h3>Wheater App</h3>
+                </a>
+                <p class="small">
+                  Wheater App based on user's geolocation showing wheater for
+                  today and next 5 days.
+                </p>
+                <ul>
+                  <li>JavaSript</li>
+                  <li>Metawheater API</li>
+                  <li>Geolocation API</li>
+                  <li>HTML & CSS</li>
+                </ul>
+              </div>
+              <div class="project-link">
+                <a
+                  href="https://github.com/mutko/weather-app"
+                  class="btn btn--light"
+                  >See Project on Github <i class="fas fa-code"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <!-- END Single Project -->
+        </div>
+        <!-- END Few Projects -->
+        <div class="view-all">
+          <a href="works.html" title="See all my work" class="btn btn--prime"
+            >View All Projects</a
+          >
+        </div>
       </div>
       <!-- END container -->
     </section>
@@ -239,17 +416,17 @@
         </p>
         <a href="contact.html" class="btn btn--prime">Contact me</a>
       </div> -->
-      <!-- END container -->
+    <!-- END container -->
     <!-- </section> -->
     <!-- END Hire me -->
 
     <!-- Testimonials -->
-   <!-- <section class="section test">
+    <!-- <section class="section test">
       <div class="container">
         <h2>Testimonials</h2>
         <p>People I've worked with have said some nice things..</p>
       </div> -->
-      <!-- END container -->
+    <!-- END container -->
     <!-- </section> -->
     <!-- END Testimonials -->
 
@@ -267,9 +444,15 @@
           <p>Have a job opportunity or freelance project?</p>
           <a href="contact.html" class="btn btn--prime">Contact Me</a>
         </div>
-        <a href="index.html" title="Logo link to homepage" class="footer-logo"
-          >B</a
-        >
+        <div class="footer-logo">
+            <a href="index.html" title="Logo link to homepage">
+                <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="180 200 440 340">
+                  <path d="M308.66,463.3a62.4,62.4,0,0,1-62.86-62.38V265.41a57.15,57.15,0,0,0-57.14-57.15h0V400.92q0,5.06.42,10c5.14,61,56.8,109.08,119.58,109.08a120.14,120.14,0,0,0,84.48-34.58,128.43,128.43,0,0,1-28.59-55.95A62.92,62.92,0,0,1,308.66,463.3Z"/>
+                  <path d="M610.92,390.92c-5.14-61-56.8-109.08-119.58-109.08a119.94,119.94,0,0,0-62.86,17.68V265.41a57.15,57.15,0,0,0-57.14-57.15h0v79.6a130.82,130.82,0,0,1,35.52,28.56,129.23,129.23,0,0,1,21.62,34.42,126.78,126.78,0,0,1,7,21.53A62.82,62.82,0,0,1,554.2,400.92c0,34.45-28.14,62.38-62.86,62.38-33.46,0-60.8-25.95-62.74-58.67-.07-1.23-.12-2.46-.12-3.71h.18c0-1.24,0-2.48-.06-3.71,0-.95-.07-1.89-.12-2.84A118,118,0,0,0,400,323.78,120.52,120.52,0,0,0,255.8,294v73.15a63,63,0,0,1,115.54,29.2l.06.83c.07,1.23.12,2.46.12,3.71h-.18c0,1.24,0,2.48.06,3.71A118,118,0,0,0,400,478.06,120.14,120.14,0,0,0,491.34,520c66.17,0,120-53.42,120-119.08Q611.34,395.87,610.92,390.92Z"/>
+                </svg>
+              </a>
+        </div>
+
         <ul class="social-list">
           <li>
             <a href="https://github.com/mutko" title="View my work on github">
@@ -292,7 +475,7 @@
             </a>
           </li>
         </ul>
-        <p class="copyright">Handcrafted by me &copy; 2019</p>
+        <p class="small copyright">Handcrafted by me &copy; 2019</p>
       </div>
       <!-- END container -->
     </footer>

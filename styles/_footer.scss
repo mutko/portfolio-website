@@ -11,11 +11,11 @@
   @include flexCenter();
   flex-direction: column;
   padding: 3rem;
-  background: #333;
+  background: $mainColor;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   transform: translateY(-50%);
   margin-top: 6rem;
-  margin-bottom: -3rem;
+  margin-bottom: -4rem;
   border-radius: 15px;
   @media (min-width: $l) {
     flex-direction: row;
@@ -32,8 +32,11 @@
 }
 
 .footer-logo {
-  color: #fff;
-  font-size: 3rem;
+  text-align: center;
+  svg {
+    fill: #fff;
+    width: 75px;
+  }
 }
 .social-list {
   @include flexCenter();
@@ -64,5 +67,4 @@
 .copyright {
   color: #fff;
   opacity: 0.7;
-  font-size: 1rem;
 }
