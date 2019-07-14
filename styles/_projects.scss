@@ -1,5 +1,5 @@
 .projects {
-  p:first-of-type {
+  .section-title + p {
     text-align: center;
     a {
       color: $altColor;
@@ -9,11 +9,15 @@
     max-width: 940px;
   }
 }
+.few-projects {
+  padding-top: 5rem;
+}
 .project-preview {
-  padding-top: 3rem;
+  padding-bottom: 3rem;
   position: relative;
   @media (min-width: $s) {
     display: flex;
+    padding-bottom: 6rem;
   }
 }
 .project-image {
@@ -24,12 +28,6 @@
   }
   @media (min-width: $l) {
     flex: 1.2;
-  }
-  img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
   }
 }
 .project-text {
@@ -45,28 +43,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  ul {
-    line-height: 1.2;
-  }
-  li {
-    text-align: center;
-    display: inline-block;
-    padding: 0.3rem 0.5rem;
-    border-radius: 3px;
-    background: $altColor;
-    color: #fff;
-    font-size: 0.75rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    white-space: nowrap;
-  }
   h3 {
     font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: 400;
   }
   p {
-    padding: 1rem 0;
+    padding: 0.5rem 0;
   }
 }
 .project-link {
@@ -74,5 +57,7 @@
 }
 .view-all {
   text-align: center;
-  padding-top: 5rem;
+}
+.change-order {
+  order: 1;
 }

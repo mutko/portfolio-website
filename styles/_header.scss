@@ -76,9 +76,8 @@
 .page-menu {
   @include flexCenter();
   line-height: 1;
-  padding: 1.5rem 0 3rem;
   @media (min-width: $l) {
-    padding: 4rem 0;
+    padding: 2rem 0;
   }
 }
 .nav-list {

@@ -1,7 +1,20 @@
+.about-me {
+  .container {
+    @media (min-width: $m) {
+      @include flexCenter();
+    }
+  }
+}
 .about-me__text {
-  padding-bottom: 2rem;
+  line-height: 1.5;
+  padding-left: 2rem;
+  font-size: 1.2rem;
+  .section-title {
+    // text-align: left;
+    font-size: 2rem;
+  }
   p {
-    padding-bottom: 1.5rem;
+    padding-bottom: 1rem;
   }
 }
 .about-me__resume {
@@ -112,4 +125,25 @@
     transform: translateY(5px);
     transition: opacity 0.3s, transform 0.3s ease;
   }
+}
+
+.skills-badges {
+  line-height: 1.2;
+}
+.skill-badge {
+  text-align: center;
+  display: inline-block;
+  padding: 0.3rem 0.5rem;
+  border-radius: 3px;
+  background: $altColor;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.skill-badge--light {
+  border: 1px solid $altColor;
+  color: $altColor;
+  background: transparent;
 }
