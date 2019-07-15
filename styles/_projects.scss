@@ -5,9 +5,6 @@
       color: $altColor;
     }
   }
-  .container {
-    max-width: 940px;
-  }
 }
 .few-projects {
   padding-top: 5rem;
@@ -28,10 +25,10 @@
   }
   @media (min-width: $l) {
     flex: 1.2;
+    padding-right: 2rem;
   }
 }
 .project-text {
-  text-align: center;
   @media (min-width: $s) {
     flex: 1;
     display: flex;
@@ -39,25 +36,32 @@
   }
 }
 .project-text__inner {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   h3 {
     font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: 400;
   }
   p {
-    padding: 0.5rem 0;
+    padding-bottom: 1rem;
+    @media (min-width: $s) {
+      padding: 1rem 0;
+    }
+  }
+  @media (max-width: $s) {
+    text-align: center;
   }
 }
 .project-link {
-  text-align: right;
+  padding-top: 1rem;
+  @media (max-width: $s) {
+    text-align: center;
+  }
 }
 .view-all {
   text-align: center;
 }
-.change-order {
+.order-change {
   order: 1;
+  padding-right: 0;
+  padding-left: 2rem;
 }

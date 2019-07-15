@@ -1,130 +1,40 @@
 .about-me {
   .container {
-    @media (min-width: $m) {
+    @media (min-width: $l) {
       @include flexCenter();
     }
   }
 }
 .about-me__text {
-  line-height: 1.5;
-  padding-left: 2rem;
-  font-size: 1.2rem;
-  .section-title {
-    // text-align: left;
-    font-size: 2rem;
-  }
+  flex: 1;
+  text-align: center;
   p {
     padding-bottom: 1rem;
   }
-}
-.about-me__resume {
-  text-align: right;
-}
-.boxed {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.skill-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-  grid-template-rows: auto;
   @media (min-width: $m) {
-    grid-template-columns: repeat(5, 100px);
-    justify-content: center;
-  }
-  li {
-    font-size: 1rem;
-    padding-bottom: 1.5rem;
-    text-align: center;
-    position: relative;
-    @media (min-width: $l) {
-      padding-bottom: 0.5rem;
-      &:hover .tooltip {
-        opacity: 1;
-        transform: translateY(0);
-      }
+    text-align: left;
+    .section-title {
+      text-align: left;
     }
-    i {
-      font-size: 4rem;
-      color: #444;
-      transition: color 0.3s;
+    p {
+      text-align: left;
     }
-  }
-}
-.skill-html:hover {
-  i {
-    color: #e54d26;
-  }
-}
-.skill-css:hover {
-  i {
-    color: #2965f1;
-  }
-}
-.skill-sass:hover {
-  i {
-    color: #cd6799;
-  }
-}
-.skill-bootstrap:hover {
-  i {
-    color: #9933cc;
-  }
-}
-.skill-responsive:hover {
-  i {
-    color: $altColor;
-  }
-}
-.skill-js:hover {
-  i {
-    color: #f7df1e;
-  }
-}
-.skill-vue:hover {
-  i {
-    color: #41b883;
-  }
-}
-.skill-jquery {
-  svg {
-    height: 56px;
-    fill: #444;
-  }
-  &:hover {
-    svg {
-      fill: #0769ad;
-    }
-  }
-}
-.skill-taskers:hover {
-  i {
-    color: $thirdColor;
-  }
-}
-.skill-git:hover {
-  i {
-    color: #f1502f;
-  }
-}
-
-.tooltip {
-  padding-top: 0.3rem;
-  line-height: 1.4;
-  p:first-of-type {
-    text-transform: uppercase;
-    color: #444;
-    font-weight: bold;
-  }
-  p:last-of-type {
-    font-size: 0.85rem;
   }
   @media (min-width: $l) {
-    opacity: 0;
-    transform: translateY(5px);
-    transition: opacity 0.3s, transform 0.3s ease;
+    padding-left: 2rem;
   }
+}
+.about-me__image {
+  @media (max-width: $l) {
+    padding-bottom: 3rem;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  flex: 1;
+  padding-bottom: 2rem;
+}
+.about-me__resume {
+  padding-top: 1rem;
 }
 
 .skills-badges {
@@ -146,4 +56,5 @@
   border: 1px solid $altColor;
   color: $altColor;
   background: transparent;
+  margin: 0.4rem;
 }
