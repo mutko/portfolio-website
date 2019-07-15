@@ -104,7 +104,7 @@ http://taylorkmho.com/
               My goal is to build fast, small and medium web apps that clearly
               communicate with users.
             </p>
-            <a href="contact.html" class="btn btn--prime">Contact Me</a>
+            <a href="contact.html" class="btn btn--prime">Contact me</a>
           </div>
         </div>
         <!-- END container -->
@@ -130,7 +130,7 @@ http://taylorkmho.com/
             so that I can apply these to real projects. -->
             I am good at
           </p>
-          <ul class="skills-badges">
+          <ul>
             <li class="skill-badge skill-badge--light">html/html5</li>
             <li class="skill-badge skill-badge--light">css/css3</li>
             <li class="skill-badge skill-badge--light">javascript</li>
@@ -264,7 +264,6 @@ http://taylorkmho.com/
         <h2 class="section-title">Works</h2>
         <p>
           Below are listed few recent front-end projects.
-          <a href="works.html" title="See all my work">See all projects.</a>
         </p>
         <div class="few-projects">
           <div class="project-preview">
@@ -275,7 +274,7 @@ http://taylorkmho.com/
                 target="_blank"
               >
                 <picture>
-                  <source media="(max-width: 992px)" srcset="img/mobile.png" />
+                  <source media="(max-width: 991px)" srcset="img/mobile.png" />
                   <source media="(min-width: 992px)" srcset="img/laptop.png" />
                   <img src="img/mobile.png" alt="App screenshot" />
                 </picture>
@@ -325,7 +324,7 @@ http://taylorkmho.com/
                 target="_blank"
               >
                 <picture>
-                  <source media="(max-width: 992px)" srcset="img/mobile.png" />
+                  <source media="(max-width: 991px)" srcset="img/mobile.png" />
                   <source media="(min-width: 992px)" srcset="img/laptop.png" />
                   <img src="img/mobile.png" alt="App screenshot" />
                 </picture>
@@ -372,7 +371,7 @@ http://taylorkmho.com/
                 target="_blank"
               >
                 <picture>
-                  <source media="(max-width: 992px)" srcset="img/mobile.png" />
+                  <source media="(max-width: 991px)" srcset="img/mobile.png" />
                   <source media="(min-width: 992px)" srcset="img/laptop.png" />
                   <img src="img/mobile.png" alt="App screenshot" />
                 </picture>
@@ -418,7 +417,7 @@ http://taylorkmho.com/
                 target="_blank"
               >
                 <picture>
-                  <source media="(max-width: 992px)" srcset="img/mobile.png" />
+                  <source media="(max-width: 991px)" srcset="img/mobile.png" />
                   <source media="(min-width: 992px)" srcset="img/laptop.png" />
                   <img src="img/mobile.png" alt="App screenshot" />
                 </picture>
@@ -469,42 +468,73 @@ http://taylorkmho.com/
     <!-- END Projects -->
 
     <!-- Hire me -->
-    <!-- <section class="section hire-me">
+    <section class="section hire-me">
       <div class="container">
-        <h2>Hire me</h2>
-        <p>
-          If you’re looking for a Frontend Developer who will join your team,
-          look no further.
-        </p>
-        <a href="contact.html" class="btn btn--prime">Contact me</a>
-      </div> -->
+        <div class="hire-me__inner">
+          <h2 class="section-title">Hire me</h2>
+          <p>
+            If you’re looking for a Frontend Developer who will join your team or if you have freelance project,
+            look no further.
+          </p>
+          <a href="contact.html" class="btn btn--prime">Contact me</a>
+        </div>
+      </div>
     <!-- END container -->
-    <!-- </section> -->
+    </section>
     <!-- END Hire me -->
 
     <!-- Testimonials -->
-    <!-- <section class="section test">
+    <section class="section test">
       <div class="container">
-        <h2>Testimonials</h2>
-        <p>People I've worked with have said some nice things..</p>
-      </div> -->
+        <div class="test-inner">
+          <h2 class="section-title">Testimonials</h2>
+          <p>People I've worked with have said some nice things..</p>
+          <div class="client">
+            <img src="https://via.placeholder.com/100" alt="Client logo" class="client-logo">
+            <p class="client-quote">“Matt was a real pleasure to work with and we look forward to working with him again. He’s definitely the kind of designer you can trust with a project from start to finish.”</p>
+            <p class="client-name">Branko Bozovic</p>
+            <p class="client-firm">Google</p>
+          </div>
+        </div>
+      </div>
     <!-- END container -->
-    <!-- </section> -->
+    </section>
     <!-- END Testimonials -->
 
-    <!-- Hire Freelance -->
-    <!-- <section class="section hire-freelance">
-      <div class="container"></div>
-    </section> -->
-    <!-- END Hire Freelance -->
 
-    <!-- Page Footer -->
-    <footer class="page-footer">
+    <!-- Contact -->
+    <section class="section contact">
       <div class="container">
-        <div class="box-cta">
+        <form>
+          <div class="contact-info">
+            <h2 class="section-title">Contact me</h2>
+            <p>Write me an e-mail via the form, or just send us an e-mail directly at
+              <a href="mailto:bmutko@gmail.com" class="inline-link">bmutko@gmail.com</a>
+            </p>
+          </div>
+          <div class="contact-form">
+            <div class="form-group">
+              <input type="text" name="name" id="name" placeholder="Name" class="form-control" required />
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" id="email" placeholder="Email" class="form-control" required />
+            </div>
+            <div class="form-group">
+              <textarea name="message" id="message" placeholder="Your message" rows="6" class="form-control" required ></textarea>
+            </div>
+            <button type="submit" class="btn btn--prime">Send message</button>
+          </div>
+        </form>
+      </div><!-- END container -->
+    </section><!-- END Contact-->
+    
+    <!-- Page Footer -->
+    <footer class="section page-footer">
+      <div class="container">
+        <!-- <div class="box-cta">
           <p>Have a job opportunity or freelance project?</p>
           <a href="contact.html" class="btn btn--prime">Contact Me</a>
-        </div>
+        </div> -->
         <div class="footer-logo">
           <a href="index.html" title="Logo link to homepage">
             <svg

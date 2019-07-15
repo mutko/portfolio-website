@@ -1,0 +1,20 @@
+.test {
+  text-align: center;
+  .section-title + p {
+    padding-bottom: 3rem;
+  }
+}
+.test-inner {
+  width: 66%;
+  margin: 0 auto;
+}
+.client-logo {
+  padding: 3rem;
+}
+.client-name {
+  padding-top: 3rem;
+  font-weight: 600;
+}
+.client-firm {
+  font-weight: 300;
+}

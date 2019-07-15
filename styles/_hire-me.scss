@@ -1,0 +1,17 @@
+.hire-me {
+  background: $gray;
+  .section-title {
+    text-align: left;
+  }
+  .hire-me__inner {
+    @media (min-width: $m) {
+      max-width: 80%;
+    }
+    @media (min-width: $xl) {
+      max-width: 66%;
+    }
+  }
+  p {
+    padding: 1rem 0 3rem;
+  }
+}
