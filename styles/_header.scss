@@ -20,19 +20,24 @@
 .links {
   .container {
     width: auto;
-    @media (max-width: $l) {
-      padding: 0;
-    }
+    // @media (max-width: $l) {
+    padding: 0;
+    // }
   }
   position: fixed;
   top: 0;
   left: 0;
   width: 70vw;
+  padding-top: 1rem;
   @media (min-width: $m) {
     width: 50vw;
+    padding-top: 3rem;
+  }
+  @media (min-width: $xl) {
+    width: 40vw;
+    padding-top: 3rem;
   }
   height: 100vh;
-  padding: 1rem 0;
   background: #fff;
   z-index: 20;
   overflow-y: auto;
@@ -40,38 +45,37 @@
   transition: transform 0.5s;
   a {
     color: $textColor;
-    &.active,
     &.email-link {
       color: $altColor;
     }
   }
-  @media (min-width: $l) {
-    .container {
-      @include flexCenter();
-      width: 960px;
-      @media (min-width: $xl) {
-        width: 1140px;
-      }
-    }
-    position: absolute;
-    background: $mainColor;
-    padding: 3rem 0 5rem;
-    overflow: hidden;
-    left: 0;
-    right: 0;
-    top: 0;
-    width: auto;
-    height: auto;
-    h2,
-    a {
-      color: #fff;
-    }
-    transform: translateX(0);
-    transform: translateY(-100%);
-    @media (min-width: $xl) {
-      padding: 5rem 0 7rem;
-    }
-  }
+  // @media (min-width: $l) {
+  //   .container {
+  //     @include flexCenter();
+  //     width: 960px;
+  //     @media (min-width: $xl) {
+  //       width: 1140px;
+  //     }
+  //   }
+  //   position: absolute;
+  //   background: $mainColor;
+  //   padding: 3rem 0 5rem;
+  //   overflow: hidden;
+  //   left: 0;
+  //   right: 0;
+  //   top: 0;
+  //   width: auto;
+  //   height: auto;
+  //   h2,
+  //   a {
+  //     color: #fff;
+  //   }
+  //   transform: translateX(0);
+  //   transform: translateY(-100%);
+  //   @media (min-width: $xl) {
+  //     padding: 5rem 0 7rem;
+  //   }
+  // }
 }
 .page-menu {
   @include flexCenter();
@@ -81,57 +85,63 @@
   }
 }
 .nav-list {
-  @media (max-width: $l) {
-    line-height: 1;
-  }
+  // @media (max-width: $l) {
+  line-height: 1;
+  // }
   li {
     text-transform: uppercase;
     a {
       display: block;
       padding: 1rem 2rem;
+      @media (min-width: $xxl) {
+        padding: 2rem 4rem;
+      }
       &:hover {
         color: $altColor;
       }
-      @media (min-width: $l) {
-        padding: 0.5rem 2rem;
-      }
+      //  @media (min-width: $l) {
+      //    padding: 0.5rem 2rem;
+      //  }
     }
   }
 }
 .hire {
   padding: 1.5rem 2rem;
-  @media (min-width: $l) {
-    margin-left: auto;
+  @media (min-width: $xxl) {
+    padding: 2rem 4rem;
   }
+  // @media (min-width: $l) {
+  //   margin-left: auto;
+  // }
   p {
     padding: 0.5rem 0 1rem;
     color: #666;
-    @media (max-width: $l) {
-      line-height: 1.4;
-    }
+    // @media (max-width: $l) {
+    line-height: 1.4;
+    // }
   }
 }
 .active {
-  @media (max-width: $l) {
-    display: block;
-  }
+  // @media (max-width: $l) {
+  display: block;
+  // }
 }
 .menu-open {
-  @media (max-width: $l) {
-    transform: translateX(0);
-  }
-  @media (min-width: $l) {
-    transform: translateY(0);
-  }
+  // @media (max-width: $l) {
+  transform: translateX(0);
+  // }
+  // @media (min-width: $l) {
+  //   transform: translateY(0);
+  // }
 }
-.slide-margin {
-  @media (min-width: $l) {
-    margin-top: 333px;
-  }
-  @media (min-width: $xl) {
-    margin-top: 360px;
-  }
-}
+// .slide-margin {
+//   @media (min-width: $l) {
+//     margin-top: 333px;
+//   }
+//   @media (min-width: $xl) {
+//     margin-top: 360px;
+//   }
+// }
 .toggle {
   margin-left: auto;
   min-width: 44px;
@@ -178,17 +188,17 @@
     background: transparent !important;
     &::before {
       transform: translateY(8px) rotateZ(-45deg);
-      @media (min-width: $l) {
-        top: 100%;
-        transform: rotate(-48deg) translate(-2px, -5px);
-      }
+      // @media (min-width: $l) {
+      //   top: 100%;
+      //   transform: rotate(-48deg) translate(-2px, -5px);
+      // }
     }
     &::after {
       transform: translateY(-8px) rotateZ(45deg);
-      @media (min-width: $l) {
-        transform: rotate(45deg) translate(5px, -5px);
-        transform-origin: 100% 0;
-      }
+      // @media (min-width: $l) {
+      //   transform: rotate(45deg) translate(5px, -5px);
+      //   transform-origin: 100% 0;
+      // }
     }
   }
 }

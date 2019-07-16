@@ -27,20 +27,23 @@ http://riccardozanutta.com/
 http://taylorkmho.com/
    -->
   </head>
-  <body>
+  <body id="index">
     <div class="overlay" id="overlay"></div>
     <div class="links" id="links">
       <div class="container">
         <nav class="page-nav">
           <ul class="nav-list">
-            <li class="nav-link">
-              <a href="index.html" title="Homepage" class="active">Home</a>
+            <li id="btn-home" class="nav-link">
+              <a href="#index" title="Homepage">Home</a>
             </li>
-            <li class="nav-link">
-              <a href="works.html" title="See my work">Works</a>
+            <li id="btn-about" class="nav-link">
+              <a href="#about" title="Read about me">About</a>
             </li>
-            <li class="nav-link">
-              <a href="contact.html" title="Contact me">Contact</a>
+            <li id="btn-works" class="nav-link">
+              <a href="#works" title="See my work">Works</a>
+            </li>
+            <li id="btn-contact" class="nav-link">
+              <a href="#contact" title="Contact me">Contact</a>
             </li>
           </ul>
         </nav>
@@ -114,7 +117,7 @@ http://taylorkmho.com/
     </div>
     <!-- END Hero Wrapper -->
 
-    <section class="section about-me">
+    <section id="about" class="section about-me">
       <div class="container">
         <div class="about-me__image">
           <img src="img/about-img.png" alt="Person on computer" />
@@ -260,7 +263,7 @@ http://taylorkmho.com/
     <!-- END About -->
 
     <!-- Projects -->
-    <section class="section projects">
+    <section id="works" class="section projects">
       <div class="container">
         <h2 class="section-title">Works</h2>
         <p>
@@ -527,7 +530,7 @@ http://taylorkmho.com/
 
 
     <!-- Contact -->
-    <section class="section contact">
+    <section id="contact" class="section contact">
       <div class="container">
         <form>
           <div class="contact-info">
@@ -560,7 +563,7 @@ http://taylorkmho.com/
           <a href="contact.html" class="btn btn--prime">Contact Me</a>
         </div> -->
         <div class="footer-logo">
-          <a href="index.html" title="Logo link to homepage">
+          <a href="#index" title="Back to top">
             <svg
               id="Layer_1"
               data-name="Layer 1"
