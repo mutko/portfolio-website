@@ -3538,6 +3538,40 @@ textarea {
   }
 }
 
+::-moz-selection {
+  background-color: #e45956;
+  color: #fff;
+}
+
+::selection {
+  background-color: #e45956;
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 5px;
+  background: transparent;
+}
+
+scrollbar {
+  width: 8px;
+  height: 5px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e45956;
+  background: -webkit-gradient(linear, left top, right top, from(#e45956), to(#c14e7c));
+  background: linear-gradient(to right, #e45956 0%, #c14e7c 100%);
+}
+
+scrollbar-thumb {
+  background: #e45956;
+  background: -webkit-gradient(linear, left top, right top, from(#e45956), to(#c14e7c));
+  background: linear-gradient(to right, #e45956 0%, #c14e7c 100%);
+}
+
 html {
   height: 100%;
   scroll-behavior: smooth;

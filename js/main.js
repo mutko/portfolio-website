@@ -28,4 +28,5 @@ overlay.addEventListener("click", function() {
 });
 
 // init glide carousel
-new Glide(".glide").mount();
+// new Glide(".works-carousel").mount();
+new Glide(".clients-carousel").mount();

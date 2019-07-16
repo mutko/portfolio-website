@@ -1,3 +1,23 @@
+::selection {
+  background-color: $altColor;
+  color: #fff;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  height: 5px;
+  background: transparent;
+}
+scrollbar {
+  width: 8px;
+  height: 5px;
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  @include colorBg();
+}
+scrollbar-thumb {
+  @include colorBg();
+}
 html {
   height: 100%;
   scroll-behavior: smooth;
