@@ -10,7 +10,6 @@ body {
   @media (min-width: $s) {
     font-size: 1.5rem;
   }
-
   line-height: 1.8;
   height: 100%;
 }
@@ -92,6 +91,10 @@ img {
 }
 .section {
   padding: 6rem 0;
+  @media (min-width: $xl) {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
 }
 .section-title {
   text-transform: capitalize;
@@ -102,4 +105,8 @@ img {
 }
 .inline-link {
   color: $altColor;
+}
+.wrap {
+  z-index: 1;
+  background: #fff;
 }

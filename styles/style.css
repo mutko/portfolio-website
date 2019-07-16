@@ -3670,6 +3670,13 @@ img {
   padding: 6rem 0;
 }
 
+@media (min-width: 1200px) {
+  .section {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+}
+
 .section-title {
   text-transform: capitalize;
   text-align: center;
@@ -3680,6 +3687,11 @@ img {
 
 .inline-link {
   color: #e45956;
+}
+
+.wrap {
+  z-index: 1;
+  background: #fff;
 }
 
 .page-header {
@@ -3732,6 +3744,11 @@ img {
 @media (min-width: 768px) {
   .links {
     width: 50vw;
+  }
+}
+
+@media (min-width: 992px) {
+  .links {
     padding-top: 3rem;
   }
 }
@@ -3739,7 +3756,6 @@ img {
 @media (min-width: 1200px) {
   .links {
     width: 40vw;
-    padding-top: 3rem;
   }
 }
 
@@ -3780,6 +3796,13 @@ img {
   padding: 1rem 2rem;
 }
 
+@media (min-width: 992px) {
+  .nav-list li a {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
 @media (min-width: 1920px) {
   .nav-list li a {
     padding: 2rem 4rem;
@@ -3792,6 +3815,13 @@ img {
 
 .hire {
   padding: 1.5rem 2rem;
+}
+
+@media (min-width: 992px) {
+  .hire {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
 }
 
 @media (min-width: 1920px) {
@@ -3883,7 +3913,7 @@ img {
   height: 100vh;
   background: #f7f7f7;
   position: relative;
-  margin-bottom: 6rem;
+  margin-bottom: 4rem;
 }
 
 .hero {
@@ -4057,6 +4087,12 @@ img {
     display: -ms-flexbox;
     display: flex;
     padding-bottom: 6rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .project-preview {
+    padding-bottom: 8rem;
   }
 }
 
