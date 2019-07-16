@@ -1,12 +1,14 @@
 .test {
   text-align: center;
   .section-title + p {
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
   }
 }
 .test-inner {
-  width: 66%;
-  margin: 0 auto;
+  @media (min-width: $m) {
+    width: 66%;
+    margin: 0 auto;
+  }
 }
 .client-logo {
   padding: 3rem;
@@ -17,4 +19,23 @@
 }
 .client-firm {
   font-weight: 300;
+}
+.glide__bullets {
+  padding-top: 1rem;
+}
+.glide__bullet {
+  width: 1.1rem;
+  height: 1.1rem;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid #e6ecf8;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  &:focus {
+    outline: none;
+  }
+}
+.glide__bullet--active {
+  background: $altColor;
+  border-color: $altColor;
 }

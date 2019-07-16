@@ -16,3 +16,5 @@ overlay.addEventListener("click", function() {
   menu.classList.toggle("menu-open");
   hambBtn.classList.toggle("open");
 });
+
+new Glide(".glide").mount();
