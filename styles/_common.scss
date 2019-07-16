@@ -27,6 +27,9 @@ h2 {
 h3 {
   font-size: 2rem;
 }
+p {
+  font-weight: 300;
+}
 img {
   display: block;
   max-width: 100%;
@@ -70,7 +73,7 @@ img {
 .btn--light {
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: rgba(0, 0, 0, 0.5);
   position: relative;
   &:hover {
