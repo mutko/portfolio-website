@@ -33,7 +33,6 @@ new Glide(".clients-carousel").mount();
 
 // change title if tab out of focus
 let hidden, visibilityChange;
-
 if (typeof document.hidden !== "undefined") {
   hidden = "hidden";
   visibilityChange = "visibilitychange";
@@ -44,15 +43,13 @@ if (typeof document.hidden !== "undefined") {
   hidden = "webkitHidden";
   visibilityChange = "webkitvisibilitychange";
 }
-
 function handleVisibilityChange() {
   if (document[hidden]) {
-    document.title = "Please check this before closing :)";
+    document.title = "Please visit my page before closing :)";
   } else {
     document.title = "Branko | Frontend developer";
   }
 }
-
 if (typeof document.addEventListener === "undefined" || hidden === undefined) {
   console.log(
     "This demo requires a browser, such as Google Chrome or Firefox, that supports the Page Visibility API."
