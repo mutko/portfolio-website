@@ -1,5 +1,6 @@
 .hire-me {
-  background: $gray;
+  @include imageBg();
+  background-image: url("../img/bg.jpg");
   .section-title {
     text-align: left;
   }
@@ -12,6 +13,7 @@
     }
   }
   p {
-    padding: 1rem 0 3rem;
+    padding-bottom: 2rem;
+    font-weight: 400;
   }
 }

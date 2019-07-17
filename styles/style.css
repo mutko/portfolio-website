@@ -3715,6 +3715,12 @@ img {
   }
 }
 
+.bg-overlay {
+  background-color: rgba(255, 255, 255, 0.85);
+  width: 100%;
+  height: 100%;
+}
+
 .section-title {
   text-transform: capitalize;
   text-align: center;
@@ -3751,7 +3757,7 @@ img {
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(0, 0, 0, 0.5);
   z-index: 10;
   display: none;
 }
@@ -3949,7 +3955,11 @@ img {
 .hero-wrapper {
   height: 100%;
   height: 100vh;
-  background: #f7f7f7;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-image: url("../img/bg.jpg");
   position: relative;
   margin-bottom: 4rem;
 }
@@ -4136,7 +4146,7 @@ img {
 }
 
 .project-image {
-  max-width: 70%;
+  max-width: 80%;
   margin: 0 auto;
 }
 
@@ -4221,7 +4231,11 @@ img {
 }
 
 .hire-me {
-  background: #f7f7f7;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-image: url("../img/bg.jpg");
 }
 
 .hire-me .section-title {
@@ -4241,7 +4255,8 @@ img {
 }
 
 .hire-me p {
-  padding: 1rem 0 3rem;
+  padding-bottom: 2rem;
+  font-weight: 400;
 }
 
 .test {
@@ -4260,7 +4275,7 @@ img {
 }
 
 .client-logo {
-  padding: 3rem;
+  padding-bottom: 3rem;
 }
 
 .client-name {
@@ -4297,7 +4312,11 @@ img {
 }
 
 .contact {
-  background: #f7f7f7;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-image: url("../img/contactBg.jpg");
 }
 
 @media (min-width: 768px) {

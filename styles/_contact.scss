@@ -1,5 +1,7 @@
 .contact {
-  background: $gray;
+  // background: $gray;
+  @include imageBg();
+  background-image: url("../img/contactBg.jpg");
   form {
     @media (min-width: $m) {
       display: flex;

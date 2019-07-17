@@ -30,3 +30,9 @@ $xxl: 1920px;
   background: $altColor;
   background: linear-gradient(to right, $altColor 0%, $thirdColor 100%);
 }
+@mixin imageBg() {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
