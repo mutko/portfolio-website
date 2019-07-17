@@ -3716,7 +3716,7 @@ img {
 }
 
 .bg-overlay {
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 255, 0.9);
   width: 100%;
   height: 100%;
 }
@@ -3744,11 +3744,13 @@ img {
 }
 
 .header-logo {
-  width: 100px;
+  width: 60px;
 }
 
-.header-logo svg {
-  fill: #262626;
+@media (min-width: 992px) {
+  .header-logo {
+    width: 75px;
+  }
 }
 
 .overlay {
@@ -3819,11 +3821,18 @@ img {
       -ms-flex-align: center;
           align-items: center;
   line-height: 1;
+  padding-top: 1rem;
 }
 
 @media (min-width: 992px) {
   .page-menu {
-    padding: 2rem 0;
+    padding-top: 2rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .page-menu {
+    padding-top: 6rem;
   }
 }
 
@@ -3964,6 +3973,10 @@ img {
   margin-bottom: 4rem;
 }
 
+.hero-wrapper .bg-overlay {
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
 .hero {
   position: absolute;
   top: 50%;
@@ -3979,7 +3992,6 @@ img {
 
 @media (min-width: 768px) {
   .hero__text {
-    margin-left: 10%;
     text-align: left;
   }
 }
@@ -4027,6 +4039,62 @@ img {
   padding: 3rem 0;
   font-size: 1.3rem;
   font-weight: 400;
+}
+
+.hero__intro span {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .hero__intro span {
+    display: block;
+  }
+}
+
+.scroll {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.scroll__arrow {
+  position: absolute;
+  top: 50%;
+  -webkit-animation: bounce 3s infinite ease;
+          animation: bounce 3s infinite ease;
+}
+
+.scroll__arrow::before,
+.scroll__arrow::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 1px;
+  left: 24px;
+  top: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.scroll__arrow::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.scroll__arrow::after {
+  left: 45px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 @media (min-width: 992px) {

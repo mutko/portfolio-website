@@ -2,10 +2,13 @@
   transition: margin-top 0.5s;
 }
 .header-logo {
-  width: 100px;
-  svg {
-    fill: $mainColor;
+  width: 60px;
+  @media (min-width: $l) {
+    width: 75px;
   }
+  // svg {
+  //   fill: $mainColor;
+  // }
 }
 .overlay {
   position: fixed;
@@ -81,8 +84,12 @@
 .page-menu {
   @include flexCenter();
   line-height: 1;
+  padding-top: 1rem;
   @media (min-width: $l) {
-    padding: 2rem 0;
+    padding-top: 2rem;
+  }
+  @media (min-width: $xxl) {
+    padding-top: 6rem;
   }
 }
 .nav-list {
