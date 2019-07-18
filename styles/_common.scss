@@ -77,7 +77,7 @@ img {
   display: inline-block;
   vertical-align: middle;
   text-align: center;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in;
 }
 .btn--prime {
   padding: 0.75rem 3rem;
@@ -86,7 +86,7 @@ img {
   font-weight: 300;
   text-transform: capitalize;
   &:hover {
-    transform: scale(1.05) translateY(-3px);
+    transform: scale(1.03) translateY(-3px);
     box-shadow: 1px 10px 25px -10px rgba(0, 0, 0, 0.4);
   }
 }
@@ -94,7 +94,7 @@ img {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 1.2rem;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.6);
   position: relative;
   &:hover {
     color: rgba(0, 0, 0, 0.7);
