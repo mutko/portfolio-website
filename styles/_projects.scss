@@ -29,6 +29,14 @@
   }
   @media (min-width: $l) {
     flex: 1.2;
+    img {
+      filter: opacity(85%) blur(0.5px);
+      transition: all 0.3s ease-in-out;
+    }
+    img:hover {
+      filter: none;
+      transform: scale(1.02);
+    }
   }
 }
 .project-text {

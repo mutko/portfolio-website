@@ -1,0 +1,41 @@
+.services {
+  background: $gray;
+}
+.services__list {
+  padding-top: 1rem;
+  @media (min-width: $l) {
+    display: flex;
+    padding-top: 2rem;
+  }
+}
+.services__item {
+  padding: 2rem;
+  background: #fff;
+  box-shadow: 1px 5px 20px -10px rgba(0, 0, 0, 0.4);
+  @media (min-width: $l) {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    p {
+      flex-grow: 1;
+    }
+  }
+  &:first-child {
+    margin-bottom: 2rem;
+    @media (min-width: $l) {
+      margin-bottom: 0;
+      margin-right: 2rem;
+    }
+  }
+  .btn--light {
+    text-align: left;
+    margin-top: 1rem;
+  }
+  .service__icon {
+    font-size: 2rem;
+    color: $altColor;
+  }
+  h3 {
+    padding: 1rem 0;
+  }
+}

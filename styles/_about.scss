@@ -35,6 +35,9 @@
 }
 .about-me__resume {
   padding-top: 1rem;
+  @media (min-width: $m) {
+    text-align: right;
+  }
 }
 
 .skills-badges {
