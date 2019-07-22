@@ -2,31 +2,6 @@
   @include colorBg();
   text-align: center;
 }
-// .box-cta {
-//   position: relative;
-//   @include flexCenter();
-//   flex-direction: column;
-//   padding: 3rem;
-//   background: $mainColor;
-//   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-//   transform: translateY(-50%);
-//   margin-top: 6rem;
-//   margin-bottom: -4rem;
-//   border-radius: 15px;
-//   @media (min-width: $l) {
-//     flex-direction: row;
-//     padding: 4rem;
-//   }
-//   p {
-//     padding-bottom: 2rem;
-//     color: #fff;
-//     @media (min-width: $l) {
-//       flex: 1;
-//       padding-bottom: 0;
-//     }
-//   }
-// }
-
 .footer-logo {
   text-align: center;
   svg {
