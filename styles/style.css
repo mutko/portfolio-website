@@ -4432,17 +4432,26 @@ img {
   }
 }
 
-.client-logo {
+.client__logo {
   padding-bottom: 3rem;
 }
 
-.client-name {
-  padding-top: 3rem;
-  font-weight: 600;
+.client {
+  font-weight: 300;
 }
 
-.client-firm {
-  font-weight: 300;
+.client__name {
+  padding-top: 3rem;
+}
+
+.client__name .client__first {
+  font-weight: 400;
+}
+
+.glide__slides {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .glide__bullets {

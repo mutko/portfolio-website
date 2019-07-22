@@ -10,15 +10,20 @@
     margin: 0 auto;
   }
 }
-.client-logo {
+.client__logo {
   padding-bottom: 3rem;
 }
-.client-name {
-  padding-top: 3rem;
-  font-weight: 600;
-}
-.client-firm {
+.client {
   font-weight: 300;
+}
+.client__name {
+  padding-top: 3rem;
+  .client__first {
+    font-weight: 400;
+  }
+}
+.glide__slides {
+  align-items: center;
 }
 .glide__bullets {
   padding-top: 1rem;
