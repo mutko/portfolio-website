@@ -28,7 +28,6 @@ overlay.addEventListener("click", function() {
 });
 
 // init glide carousel
-// new Glide(".works-carousel").mount();
 new Glide(".clients-carousel").mount();
 
 // change title if tab out of focus
