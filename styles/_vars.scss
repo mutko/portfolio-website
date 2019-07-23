@@ -36,3 +36,6 @@ $xxl: 1920px;
   background-position: center center;
   background-attachment: fixed;
 }
+@mixin boxShadow() {
+  box-shadow: 1px 5px 20px -10px rgba(0, 0, 0, 0.4);
+}

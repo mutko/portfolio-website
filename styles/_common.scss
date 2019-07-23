@@ -57,7 +57,7 @@ img {
   margin: 0 auto;
 }
 .container {
-  padding: 0 2rem;
+  padding: 0 1.875rem;
   @media (min-width: $s) {
     padding: 0;
     width: 540px;
@@ -87,7 +87,7 @@ img {
   text-transform: capitalize;
   &:hover {
     transform: scale(1.02);
-    box-shadow: 1px 5px 20px -10px rgba(0, 0, 0, 0.4);
+    @include boxShadow();
   }
 }
 
@@ -132,8 +132,9 @@ img {
   font-weight: 600;
   line-height: 1;
 }
-.inline-link {
+.text-link {
   color: $altColor;
+  font-weight: 400;
 }
 .wrap {
   z-index: 1;

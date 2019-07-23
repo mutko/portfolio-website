@@ -25,7 +25,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 70vw;
+  width: 75vw;
   padding-top: 1rem;
   @media (min-width: $m) {
     width: 50vw;
@@ -89,10 +89,11 @@
     color: #666;
     line-height: 1.4;
   }
-}
-.text-link {
-  color: $altColor;
-  font-weight: 600;
+  .text-link {
+    @media (max-width: 380px) {
+      font-size: 1rem;
+    }
+  }
 }
 .active {
   display: block;

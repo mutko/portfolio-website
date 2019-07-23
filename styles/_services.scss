@@ -11,7 +11,7 @@
 .services__item {
   padding: 2rem;
   background: #fff;
-  box-shadow: 1px 5px 20px -10px rgba(0, 0, 0, 0.4);
+  @include boxShadow();
   @media (min-width: $l) {
     flex: 1;
     display: flex;
