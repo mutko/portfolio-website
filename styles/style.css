@@ -666,7 +666,13 @@ img {
   }
 }
 
-.hire p {
+.hire .hire__title {
+  font-size: 2rem;
+  color: #262626;
+  font-weight: 400;
+}
+
+.hire .hire__text {
   padding: 0.5rem 0 1rem;
   color: #666;
   line-height: 1.4;

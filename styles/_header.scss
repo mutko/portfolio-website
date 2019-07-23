@@ -84,7 +84,12 @@
   @media (min-width: $xxl) {
     padding: 2rem 4rem;
   }
-  p {
+  .hire__title {
+    font-size: 2rem;
+    color: $mainColor;
+    font-weight: 400;
+  }
+  .hire__text {
     padding: 0.5rem 0 1rem;
     color: #666;
     line-height: 1.4;
