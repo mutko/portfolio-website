@@ -34,13 +34,13 @@
       font-size: 5rem;
     }
   }
-  .hero__title--first {
-    @include colorFront();
-    font-weight: 300;
-    @media (min-width: $xl) {
-      font-size: 4rem;
-    }
-  }
+  // .hero__title--first {
+  //   @include colorFront();
+  //   font-weight: 300;
+  //   @media (min-width: $xl) {
+  //     font-size: 4rem;
+  //   }
+  // }
 }
 .hero__intro {
   padding: 3rem 0;

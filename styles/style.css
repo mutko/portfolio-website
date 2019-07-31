@@ -812,7 +812,7 @@ img {
   }
 }
 
-.hero__title .hero__title--first {
+/* .hero__title .hero__title--first {
   color: #e45956;
   background: #e45956;
   background: -webkit-gradient(linear, left top, right top, from(#e45956), to(#c14e7c));
@@ -822,7 +822,7 @@ img {
   background-clip: text;
   text-fill-color: transparent;
   font-weight: 300;
-}
+} */
 
 @media (min-width: 1200px) {
   .hero__title .hero__title--first {
